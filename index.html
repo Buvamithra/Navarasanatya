@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navarasa Natya</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("JRTGIrNFdMPSkNr95"); // Replace with your actual EmailJS public key
+  })();
+</script>
+<script src="script.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🧭 NAVBAR -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#classes">Latest Classes</a>
+    <a href="#about">About Guru</a>
+    <a href="#gallery">Dance Classes</a>
+    <a href="#blogs">Blogs & Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- 🩰 HOME VIDEO SECTION -->
+  <section class="hero-section" id="home">
+    <video autoplay muted loop playsinline>
+      <source src="WhatsApp Video 2025-06-28 at 6.36.42 PM.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-text">
+      <h1>Welcome to <span style="color: #9aa503;">Navarasanatya</span></h1>
+      <p>With Guru Ponmalar Karthick</p>
+    </div>
+  </section>
+
+  <!-- 🎓 LATEST CLASSES -->
+  <section class="section" id="classes">
+    <h2>Latest Classes</h2>
+    <div class="card">
+      <h3>Adavu Series - Level 1</h3>
+      <p>Step-by-step foundation series for beginners.</p>
+      <img src="Picsart_23-04-27_20-45-17-637.jpg" width="100%" />
+    </div>
+    <div class="card">
+      <h3>Navarasa Varnam</h3>
+      <p>Explore expressions through dynamic compositions.</p>
+      <img src="img/group5.jpg" width="100%" />
+    </div>
+  </section>
+
+ <!-- 👩‍🏫 ABOUT GURU (Short + Expandable with Image) -->
+<section class="section" id="about">
+  <h2>About Guru Ponmalar Karthick</h2>
+  <div class="card" style="text-align: center;">
+    <img src="img/anni2.jpg" alt="Guru Ponmalar Karthick" style="width: 180px; border-radius: 50%; margin-bottom: 15px;" />
+    <p>
+      Guru Ponmalar Karthick is an accomplished Bharatanatyam artist trained in the Pandanallur style. 
+      With over 15 years of dedicated training in classical dance, she has successfully completed all grade examinations, 
+      showcasing her unwavering passion and mastery in the art form. For the past 3+ years, she has been mentoring aspiring dancers with utmost dedication.
+    </p>
+    <button onclick="document.getElementById('more-about').style.display='block'" style="margin-top: 10px;">Read More</button>
+  </div>
+
+  <div class="card" id="more-about" style="display: none;">
+    <h3>Full Biography</h3>
+    <p><strong>About:</strong> Mrs. Ponmalar Karthick has been immersed in Bharatanatyam for over 15 years, mastering the Pandanallur style with deep discipline and devotion. Her passion for the art reflects in her teaching and stage performances alike.</p>
+    <p><strong>Achievements:</strong> Performed at national dance festivals, Guinness World Record holder (Pondicherry).</p>
+    <p><strong>Programs:</strong> Natyanjali, Nrithya Kalotsav, Pongal Mahotsav, Temple Utsavs.</p>
+    <p><strong>Awards:</strong> Kalaimamani Junior, Youth Icon Award, Natyakala Ratna.</p>
+  </div>
+</section>
+
+
+  <!-- 🎥 DANCE CLASS SLIDER -->
+  <section class="section" id="gallery">
+    <h2>Dance Class Moments</h2>
+    <div class="slider-container">
+      <button class="prev-slide">&lt;</button>
+      <div class="slider">
+        <img src="img/group1.jpg" alt="Class 1" />
+        <img src="img/group2.jpg" alt="Class 2" />
+        <img src="img/group3.jpg" alt="Class 3" />
+      </div>
+      <button class="next-slide">&gt;</button>
+    </div>
+  </section>
+
+ <!-- 📹 BLOGS & VIDEOS -->
+<section class="section" id="blogs">
+  <h2>Blogs & Performances</h2>
+  <div class="video-slider-container">
+    <button class="video-prev">&lt;</button>
+    <div class="video-slider-wrapper">
+      <div class="video-slider">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+        <video controls>
+          <source src="video2.mp4" type="video/mp4" />
+        </video>
+        <video controls>
+          <source src="video3.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <button class="video-next">&gt;</button>
+  </div>
+</section>
+
+  <!-- 📞 CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p><strong>Phone:</strong> +91 8807876967</p>
+      <p><strong>Email:</strong> <a href="mailto:umithra1@gmail.com">navarasanatya2020@gmail.com</a></p>
+      <p><strong>Address:</strong> Navarasa Natya Academy, Chennai, India</p>
+      <button onclick="document.getElementById('register').scrollIntoView({behavior: 'smooth'})">Join Now</button>
+    </div>
+  </section>
+
+  <!-- 📝 REGISTRATION FORM (Transparent) -->
+  <section class="section" id="register">
+    <h2>Join Navarasa Natya</h2>
+    <form id="registration-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <select id="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="text" id="address" placeholder="Your Address" required />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+<button onclick="downloadUserData()">📥 Download Registered Data</button>
+
+  </section>
+
+  <!-- 🔻 FOOTER -->
+  <footer>
+    <p>Follow us:</p>
+    <a href="https://www.instagram.com/malar_navarasanatya?igsh=MWg4cm9lYjFxaDA4ZA==" target="_blank">📷</a>
+    <a href="mailto:navarasanatya2020@gmail.com">📧</a>
+    <a href="https://facebook.com/yourprofile" target="_blank">📘</a>
+    <p style="margin-top: 10px;">© 2025 Navarasa Natya</p>
+  </footer>
+
+</body>
+</html>
